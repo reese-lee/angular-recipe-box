@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './models/recipe.model'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Rassssipees';
+
+  currentRecipe: string = 'Rasssipis';
+  recipes: Recipe[] = [
+    new Recipe('Lasagna', ['cheese', 'some meats', 'some sauce'], ['put them all together in a blender', 'turn on the blender, and enjoy'])
+  ]
 }
