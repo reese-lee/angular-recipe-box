@@ -1,8 +1,8 @@
+//Recipe class 
 export class Recipe {
 
+  constructor(public description: string, public ingredients: string[],
+    public directions: string[]){
+    }
 
-  constructor(public description: string, public title: string[],
-public directions: string[]){
   }
-
-}

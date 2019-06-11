@@ -1,3 +1,20 @@
-<h1>Rassssipees</h1>
+<!-- This is for the recipes part of the page. -->
 
-<h3> {{recipes.description}}</h3>
+<body>
+
+  <h1>Rassssipees</h1>
+<!-- Have to nest the for loops to define the 'recipe' (otherwise, if you do separate <li>s for each ingredients and directions it will say 'undefined') -->
+  <ul>
+    <li *ngFor="let recipe of recipes" class="description">
+      <br> {{recipe.description}}
+      <ul>Ingredients:
+        <br>
+        <li *ngFor="let ingredient of recipe.ingredients"> {{ingredient}}</li>
+        <br>
+        Directions:
+        <br>
+        <li *ngFor="let direction of recipe.directions"> {{direction}}</li>
+      </ul>
+    </li>
+  </ul>
+</body>
