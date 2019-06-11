@@ -1,11 +1,10 @@
 /* This will only color the body tag of the Recipe portion ( <app-recipes> ) */
-
-body {
-  background-color: green;
-}
-
 .description {
   list-style: none;
   font-family: monospace;
   font-size: 25pt;
 }
+
+/* .bg-danger{
+  background-color: red;
+} */

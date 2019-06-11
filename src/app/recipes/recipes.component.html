@@ -4,9 +4,14 @@
 
   <h1>Rassssipees</h1>
 <!-- Have to nest the for loops to define the 'recipe' (otherwise, if you do separate <li>s for each ingredients and directions it will say 'undefined') -->
+
+<h2>Welcome, {{userName}}!</h2>
+<input [(ngModel)]="userName" type="text" name="user">
+
+
   <ul>
-    <li *ngFor="let recipe of recipes" class="description">
-      <br> {{recipe.description}}
+    <li [class]="priorityColor(recipe)" *ngFor="let recipe of recipes" class="description">
+      {{recipe.description}} <button (click)="editDescription()">Edit!</button>
       <ul>Ingredients:
         <br>
         <li *ngFor="let ingredient of recipe.ingredients"> {{ingredient}}</li>

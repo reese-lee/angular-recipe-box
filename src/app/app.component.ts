@@ -10,5 +10,5 @@ export class AppComponent {
   title = 'Rassssipees';
 
   currentRecipe: string = 'Rasssipis';
-  
+
 }
